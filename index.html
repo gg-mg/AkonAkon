@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AkonProject</title>
+    <script src="java.js" type="text/javascript"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <div class="jumbotron">
+        <h1>Akon Naming Project November 2019</h1>
+
+        <script language="javascript" type="text/javascript">
+            var checkedRadio, male, female;
+
+            function ClearRd(this)
+
+
+            {
+                if (checkedRadio == this) {
+                    this.checked = false;
+                    checkedRadio = null;
+                } else {
+                    checkedRadio = this;
+                }
+            }
+        </script>
+
+        <!-- <script type="text/javascript"></script>
+        // function myFunction() {
+        //     male = document.getElementById("male");
+        //     female = document.getElementById("female");
+
+        //     if (male.value == null || male.value == "") {
+        //         alert(female.value);
+        //     } else {
+        //         alert(male.value);
+        //     }
+        // }
+    </script> -->
+
+        <label>Male</label><br>
+        <input type="radio" name="radioList" id="male" value="male" onclick="ClearRd(this)" />1<br />
+        <label>Female</label><br>
+        <input type="radio" name="radioList" id="female" value="female" onclick="ClearRd(this)" />2<br />
+        <button onclick="myFunction()">SUBMIT</button>
+
+
+    </div>
+</body>
+
+</html>
