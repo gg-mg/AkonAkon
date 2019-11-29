@@ -13,7 +13,7 @@
 <body>
 
     <div class="jumbotron">
-        <h1>Akon People Naming Project: </h1>
+       
 
         <script language="javascript" type="text/javascript">
             var checkedRadio, male, female;
@@ -31,14 +31,33 @@
             }
         </script>
 
+       
+        <form action="action_page.php">
+            <div class="container">
+                <h1>Akon People Naming Project:</h1>
+                <p>Please enter information to know what you name is according to the Akon naming rules.</p>
+                
 
+                <label for="text"><b>YEAR </b></label><br>
+                <input type="text" placeholder="YYYY" id="year" name="year" required><br>
 
-        <label>Male</label><br>
-        <input type="radio" name="radioList" id="male" value="male" onclick="ClearRd(this)" />1<br />
-        <label>Female</label><br>
-        <input type="radio" name="radioList" id="female" value="female" onclick="ClearRd(this)" />2<br />
-        <button onclick="myFunction()">SUBMIT</button>
+                <label for="text"><b>MONTH </b></label><br>
+                <input type="text" placeholder="MM" name="month" required><br>
 
+                <label for="text"><b>DAY</b></label><br>
+                <input type="text" placeholder="DD" name="day" required>
+               
+
+                <label>Male</label><br>
+                <input type="radio" name="women" id="male" value="male" onclick="ClearRd(this)" />1<br />
+                <label>Female</label><br>
+                <input type="radio" name="women" id="female" value="female" onclick="ClearRd(this)" />2<br />
+                <button onclick="myFunction()">SUBMIT</button>
+
+            </div>
+
+            
+        </form>
 
     </div>
 </body>
