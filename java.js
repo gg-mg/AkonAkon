@@ -1,11 +1,15 @@
+
+
+
+
 function getYear() {
   document.getElementById("myYear").value = (prompt("Enter the year you were born:"));
 }
 function getMonth(){
-var month=parseInt(prompt("Enter the month you were born:"));
-if (month<1 || month>12) {
-  var month=parseInt(prompt("Please enter a valid month between 1 and 12:"));
-} return month;}
+  document.getElementById("myMonth").value=(parseInt(prompt("Enter the month you were born:")));
+if ( document.getElementById("myMonth").value<1 || document.getElementById("myMonth").value>12) {
+  document.getElementById("myMonth").value=parseInt(prompt("Please enter a valid month between 1 and 12:"));
+} }
 
 function dDay(){
 var day=parseInt(prompt("Enter the day you were born:"));
@@ -14,8 +18,8 @@ if (day<1 || day>31) {
 }return day;
 }
 
-document.getElementById("year").innerHTML = getYear();
-document.getElementById("myMonth").innerHTML = getMonth();
+
+
 document.getElementById("myDay").innerHTML = dDay();
 
 var d = new Date (getYear(), (getMonth()-1), dDay);
