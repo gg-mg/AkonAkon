@@ -1,12 +1,15 @@
 
-function getYear(){
-var year=(prompt("Enter the year you were born:"));
-return year;}
+
+
+function getYear() {
+  document.getElementById("myYear").value = (prompt("Enter the year you were born:"));
+}
 function getMonth(){
 var month=parseInt(prompt("Enter the month you were born:"));
 if (month<1 || month>12) {
   var month=parseInt(prompt("Please enter a valid month between 1 and 12:"));
 } return month;}
+
 function dDay(){
 var day=parseInt(prompt("Enter the day you were born:"));
 if (day<1 || day>31) {
@@ -18,7 +21,7 @@ document.getElementById("year").innerHTML = getYear();
 document.getElementById("month").innerHTML = getMonth();
 document.getElementById("day").innerHTML = dDay();
 
-var d = new Date (year, (month-1), day);
+var d = new Date (getYear(), (getMonth()-1), dDay);
 var gender;
 
 var dayofweek=d;
