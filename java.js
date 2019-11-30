@@ -12,15 +12,12 @@ if ( document.getElementById("myMonth").value<1 || document.getElementById("myMo
 } }
 
 function dDay(){
-var day=parseInt(prompt("Enter the day you were born:"));
-if (day<1 || day>31) {
-  var day=parseInt(prompt("Please enter a valid day between 1 and 31:"));
-}return day;
-}
+  document.getElementById("myDay").value=(parseInt(prompt("Enter the month you were born:")));
+if ( document.getElementById("myDay").value<1 || document.getElementById("myDay").value>31) {
+  document.getElementById("myDay").value=parseInt(prompt("Please enter a valid month between 1 and 12:"));
+} }
 
 
-
-document.getElementById("myDay").innerHTML = dDay();
 
 var d = new Date (getYear(), (getMonth()-1), dDay);
 var gender;
