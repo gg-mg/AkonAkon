@@ -34,24 +34,23 @@
        
         <form action="action_page.php">
             <div class="container">
-                <h1>Akon People Naming Project:</h1>
-                <p>Please enter information to know what you name is according to the Akon naming rules.</p>
+                <h1>Akan People Naming Project:</h1>
+                <p>Please <strong>click</strong> on the buttons below to enter information.</p>
                 
-
-                <label for="text"><b>YEAR </b></label><br>
-                <input type="text" placeholder="YYYY" id="year" name="year" required><br>
-
-                <label for="text"><b>MONTH </b></label><br>
-                <input type="text" placeholder="MM" name="month" required><br>
-
+                <label for="text"><b>YEAR</b></label><br>
+                <button id="myBtn" name="myname" value="myvalue" onclick="getYear()">YYYY</button><br>
+                <label for="text"><b>MONTH</b></label><br>
+                <button id="myBtn" name="myname" value="myvalue" onclick="getMonth()">MM</button><br>
                 <label for="text"><b>DAY</b></label><br>
-                <input type="text" placeholder="DD" name="day" required>
+                <button id="myBtn" name="myname" value="myvalue" onclick="dDay()">DD</button><br>
+                
+                       
                
 
                 <label>Male</label><br>
-                <input type="radio" name="women" id="male" value="male" onclick="ClearRd(this)" />1<br />
+                <input type="radio" name="gender" id="male" value="male" onclick="ClearRd(this)" />1<br />
                 <label>Female</label><br>
-                <input type="radio" name="women" id="female" value="female" onclick="ClearRd(this)" />2<br />
+                <input type="radio" name="gender" id="female" value="female" onclick="ClearRd(this)" />2<br />
                 <button onclick="myFunction()">SUBMIT</button>
 
             </div>

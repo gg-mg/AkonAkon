@@ -1,14 +1,22 @@
+
+function getYear(){
 var year=(prompt("Enter the year you were born:"));
+return year;}
+function getMonth(){
 var month=parseInt(prompt("Enter the month you were born:"));
 if (month<1 || month>12) {
   var month=parseInt(prompt("Please enter a valid month between 1 and 12:"));
-}
+} return month;}
+function dDay(){
 var day=parseInt(prompt("Enter the day you were born:"));
 if (day<1 || day>31) {
   var day=parseInt(prompt("Please enter a valid day between 1 and 31:"));
+}return day;
 }
 
-
+document.getElementById("year").innerHTML = getYear();
+document.getElementById("month").innerHTML = getMonth();
+document.getElementById("day").innerHTML = dDay();
 
 var d = new Date (year, (month-1), day);
 var gender;
