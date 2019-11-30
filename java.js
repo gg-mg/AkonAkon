@@ -1,6 +1,3 @@
-
-
-
 function getYear() {
   document.getElementById("myYear").value = (prompt("Enter the year you were born:"));
 }
@@ -18,8 +15,8 @@ if (day<1 || day>31) {
 }
 
 document.getElementById("year").innerHTML = getYear();
-document.getElementById("month").innerHTML = getMonth();
-document.getElementById("day").innerHTML = dDay();
+document.getElementById("myMonth").innerHTML = getMonth();
+document.getElementById("myDay").innerHTML = dDay();
 
 var d = new Date (getYear(), (getMonth()-1), dDay);
 var gender;
@@ -87,4 +84,3 @@ function myFunction() {
 
 
         }
-
