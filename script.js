@@ -1,6 +1,7 @@
 
-
-
+var year=document.getElementById("myYear").value;
+var month=document.getElementById("myMonth").value;
+var day=document.getElementById("myDay").value;
 
 function getYear() {
     document.getElementById("myYear").value = (prompt("Enter the year you were born:"));
@@ -17,9 +18,9 @@ function getYear() {
     document.getElementById("myDay").value=parseInt(prompt("Please enter a valid month between 1 and 31:"));
   } }
   
+  document.getElementById("demo").innerHTML = toCelsius;
   
-  
-  var d = new Date (getYear(), getMonth()-1, dDay());
+  var d = new Date (year, month-1, day);
   
   var dayofweek=d;
   var dayofweek = d.getDay();

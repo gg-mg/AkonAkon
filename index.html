@@ -15,7 +15,7 @@
     <div class="jumbotron-fluid">
        
 
-        <script language="javascript" type="text/javascript">
+        <!-- <script language="javascript" type="text/javascript">
             var checkedRadio, male, female;
             function ClearRd(this)
             {
@@ -26,7 +26,7 @@
                     checkedRadio = this;
                 }
             }
-        </script>
+        </script> -->
 
        
         <form>
@@ -38,20 +38,20 @@
                 <label for="text"><b>YEAR</b></label><br>
                 
 
-                <input id="myYear" type="button" value="YYYY" onclick="getYear()"></button><br>
+                <input id="myYear" type="button" value="YYYY" onclick="getYear()"><br>
                 
                 <label for="text"><b>MONTH</b></label><br>
-                <input id="myMonth" type="button" value="MM" onclick="getMonth()"></button><br>
+                <input id="myMonth" type="button" value="MM" onclick="getMonth()"><br>
                 <label for="text"><b>DAY</b></label><br>
-                <input id="myDay" type="button" value="DD" onclick="dDay()"></button><br>
+                <input id="myDay" type="button" value="DD" onclick="dDay()"><br>
                 
                 
                
 
                 <label>Male</label><br>
-                <input type="radio" name="gender" id="male" value="male" onclick="ClearRd(this)" />1<br />
+                <input type="radio" name="gender" id="male" />MALE: <br />
                 <label>Female</label><br>
-                <input type="radio" name="gender" id="female" value="female" onclick="ClearRd(this)" />2<br />
+                <input type="radio" name="gender" id="female" />FEMALE: <br />
                 <button onclick="myFunction()">SUBMIT</button>
 
             </div>
